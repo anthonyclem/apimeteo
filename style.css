@@ -1,0 +1,130 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(55, 49, 138);
+}
+
+#form {
+  background-color: #fff;
+  padding: 20px 40px 40px 40px;
+  border-radius: 20px;
+  min-width: 600px;
+  box-shadow: 0px 0px 20px rgb(41, 41, 41);
+}
+
+/*----TOP----*/
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top .titre {
+  display: flex;
+  align-items: center;
+}
+.top #title-country {
+  font-size: 8px;
+  margin: 0 0 15px 5px;
+  background-color: rgb(209, 143, 20);
+  color: white;
+  padding: 3px 7px 3px 7px;
+  border-radius: 50%;
+}
+.top #value {
+  border-radius: 15px;
+  padding: 4px 12px;
+  margin-right: 10px;
+  border: 1px solid black;
+}
+.top button {
+  border-radius: 15px;
+  padding: 4px 8px;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(37, 33, 240);
+  border: 1px solid rgb(37, 33, 240);
+  transition: all ease-in-out 0.3s;
+}
+.top button:hover {
+  background-color: rgb(67, 64, 235);
+}
+
+/*----BOT----*/
+.bot {
+  padding-top: 25px;
+  display: flex;
+}
+
+.currently {
+  padding: 5px 15px 15px 15px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(36, 36, 36, 0.76);
+}
+.currently h3 {
+  text-align: center;
+}
+.currently-items {
+  display: flex;
+  padding: 10px;
+}
+.currently-item1 {
+  margin-top: -9px;
+  padding-right: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.currently-item1 #temp {
+  font-size: 30px;
+}
+.currently-item1 #sky {
+  font-size: 50px;
+  text-align: center;
+}
+.currently-item2 {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.currently-item2 div {
+  padding-bottom: 8px;
+}
+
+.tomorrow-2d {
+  margin-left: 40px;
+  width: 120px;
+  padding: 5px 15px 15px 15px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(36, 36, 36, 0.76);
+}
+.tomorrow-2d h3 {
+  text-align: center;
+}
+.tomorrow-2d-currently-items {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+}
+.tomorrow-2d-currently-items #temp-tom {
+  font-size: 30px;
+}
+.tomorrow-2d-currently-items #sky-tom {
+  font-size: 50px;
+  text-align: center;
+}
+.tomorrow-2d-currently-items #temp-2d {
+  font-size: 30px;
+}
+.tomorrow-2d-currently-items #sky-2d {
+  font-size: 50px;
+  text-align: center;
+}

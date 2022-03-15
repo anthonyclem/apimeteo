@@ -1,0 +1,63 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Meteo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <form action="" id="form">
+      <div class="top">
+        <div class="titre">
+          <h2 id="title">Paris</h2>
+          <span id="title-country"></span>
+        </div>
+        <div>
+          <input type="text" id="value" autocomplete="off" />
+          <button type="submit">Rechercher</button>
+        </div>
+      </div>
+      <div class="bot">
+        <div class="currently">
+          <h3>Actuellement</h3>
+          <div class="currently-items">
+            <div class="currently-item1">
+              <span id="temp"></span>
+              <span><i id="sky"></i></span>
+            </div>
+            <div class="currently-item2">
+              <div><i class="fas fa-wind"></i><span id="wind"></span></div>
+              <div><i class="fas fa-tint"></i><span id="humi"></span></div>
+              <div><i class="fas fa-cloud"></i><span id="nebul"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="tomorrow-2d">
+          <h3>Demain</h3>
+          <div class="tomorrow-2d-currently-items">
+            <span id="temp-tom"></span>
+            <span><i id="sky-tom"></i></span>
+          </div>
+        </div>
+        <div class="tomorrow-2d">
+          <h3>Dans 2 jours</h3>
+          <div class="tomorrow-2d-currently-items">
+            <span id="temp-2d"></span>
+            <span><i id="sky-2d"></i></span>
+          </div>
+        </div>
+      </div>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
